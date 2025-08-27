@@ -3,3 +3,91 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    margin: 0;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    
+}
+.ContainerFather{
+    justify-content: center;
+    height: 80vh;
+    width: 80vw;
+    background: white;
+    border-radius: 20px;
+    justify-content: center;
+    box-shadow: 0 4px 40px rgba(0,0,0,0.60);
+}
+
+h1 {
+  margin: 10px 0;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #8a2be2; 
+  text-align: center;
+
+  text-shadow: 
+    0 0 5px #8a2be2,
+    0 0 15px #8a2be2,
+    0 0 30px #8a2be2,
+    0 0 60px #8a2be2;
+}
+
+.container{
+    width: 100%;
+    height: 80%;
+    background: yellow;
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.DivInput{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 60%;
+  margin-top: 10px;
+}
+
+.DivInput input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 10px 15px;
+  border-radius: 50px;
+}
+
+.DivInput button {
+  background: linear-gradient(90deg, #eeaeca, #94bbe9);
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.DivInput button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(238, 174, 202, 0.6);
+}
+
+.DivList{
+    margin-top: 10px;
+    background: #8a2be2;
+    flex: 1;
+    width: 100%;
+    overflow-y: auto;
+}

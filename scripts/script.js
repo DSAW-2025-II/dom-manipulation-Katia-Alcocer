@@ -9,6 +9,21 @@ addButton.addEventListener("click", function() {
         listItem.textContent = input.value;
         taskList.appendChild(listItem);
         input.value = "";
+    
+
+        let deleteBtn = document.createElement("button");
+        deleteBtn.textContent = "Borrar";
+        deleteBtn.style.marginLeft = "10px";
+        deleteBtn.style.cursor = "pointer";
+            
+        deleteBtn.addEventListener("click", function() {
+            listItem.remove();
+        });
+
+            listItem.appendChild(deleteBtn);
+            taskList.appendChild(listItem);
+            input.value = "";
+        
     }
 });
 

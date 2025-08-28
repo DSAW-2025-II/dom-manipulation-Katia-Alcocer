@@ -44,6 +44,7 @@ h1 {
     display: flex; 
     align-items: center;
     flex-direction: column;
+    
 }
 .DivInput{
   display: flex;
@@ -92,6 +93,7 @@ h1 {
     width: 85%;
     padding: 10px;
     overflow-y: auto;
+    max-height: 52vh; 
 }
 
 .DivList ul li {

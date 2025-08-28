@@ -11,3 +11,9 @@ addButton.addEventListener("click", function() {
         input.value = "";
     }
 });
+
+input.addEventListener("keypress", function(e) {
+    if(e.key === "Enter") {
+        addButton.click();
+    }
+});

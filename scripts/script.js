@@ -3,32 +3,41 @@ let input = document.querySelector("#taskInput");
 let addButton = document.querySelector("#addButton");
 let taskList = document.querySelector("#DynamicList");
 
-addButton.addEventListener("click", function() {
-    if(input.value.trim() !== "") {
+function addTask() {
+    if (input.value.trim() !== "") {
         let listItem = document.createElement("li");
-        listItem.textContent = input.value;
-        taskList.appendChild(listItem);
-        input.value = "";
+        
+        let checkbox = document.createElement("input");
+        checkbox.type = "checkbox";
+        
+        let taskText = document.createElement("span");
+        taskText.textContent = input.value;
     
-
         let deleteBtn = document.createElement("button");
         deleteBtn.textContent = "Borrar";
-        deleteBtn.style.marginLeft = "10px";
-        deleteBtn.style.cursor = "pointer";
-            
+        deleteBtn.classList.add("delete-btn");
+
         deleteBtn.addEventListener("click", function() {
             listItem.remove();
+        });  
+
+        checkbox.addEventListener("change", function() {
+            listItem.classList.toggle("done", checkbox.checked);
         });
 
-            listItem.appendChild(deleteBtn);
-            taskList.appendChild(listItem);
-            input.value = "";
-        
-    }
-});
+        listItem.appendChild(checkbox);
+        listItem.appendChild(taskText);
+        listItem.appendChild(deleteBtn);
 
-input.addEventListener("keypress", function(e) {
-    if(e.key === "Enter") {
-        addButton.click();
+        taskList.appendChild(listItem);
+        input.value = "";
+    }
+}
+
+addButton.addEventListener("click", addTask);
+
+input.addEventListener("keydown", function(e) {
+    if (e.key === "Enter") {
+        addTask();
     }
 });

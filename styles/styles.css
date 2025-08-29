@@ -3,3 +3,211 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(90deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    
+}
+.ContainerFather{
+    justify-content: center;
+    height: 80vh;
+    width: 80vw;
+    min-height: 70vh;
+    background: #FAF0F0;
+    border-radius: 20px;
+    box-shadow: 0 4px 40px rgba(0,0,0,0.60);
+    padding: 20px;
+}
+
+h1 {
+  margin: 10px 0;
+  font-family: 'Dancing Script', cursive;
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: bold;
+  color: #333; 
+  text-align: center;
+
+  text-shadow: 
+    0 0 5px #333,
+    0 0 15px #333,
+    0 0 30px #e75480,
+    0 0 60px #e75480;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    
+}
+.DivInput{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 60%;
+  max-width: 500px;
+  margin-top: 10px;
+}
+
+.DivInput input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 10px 15px;
+  border-radius: 50px;
+}
+
+.DivInput button {
+  background: linear-gradient(90deg, #eeaeca, #94bbe9);
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.DivInput button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(238, 174, 202, 0.6);
+}
+
+.DivList{
+    margin-top: 10px;
+    flex: 1;
+    width: 85%;
+    padding: 10px;
+    overflow-y: auto;
+    max-height: 52vh; 
+}
+
+.DivList ul li {
+  background: #b3d4fc;
+  margin: 8px 0;
+  padding: 10px 15px;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+@media (max-width: 480px) {
+  .ContainerFather {
+    width: 95vw;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .DivInput {
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+  }
+
+  .DivInput input, .DivInput button {
+    width: 100%;
+  }
+
+  .DivList {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .ContainerFather {
+    width: 90vw;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .DivInput {
+    width: 80%;
+  }
+
+  .DivList {
+    width: 90%;
+  }
+}
+
+.delete-btn {
+  margin-left: 10px;
+  cursor: pointer;
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 13px;
+}
+.delete-btn:hover {
+  transform: scale(1.05);
+  background: darkred;
+  box-shadow: 0 4px 10px #5E5E5E;
+}
+
+.done span {
+  text-decoration: line-through;
+  color: #3B3D3D;
+  opacity: 0.9;
+}
+
+.DivList ul li:hover {
+  background: #7daee6;
+  transform: scale(1.01);
+  transition: 0.2s;
+}
+
+.DivList::-webkit-scrollbar {
+  width: 8px;
+}
+.DivList::-webkit-scrollbar-thumb {
+  background:#C3C6C6;
+  border-radius: 10px;
+}
+
+.DivList ul li span {
+  font-family: 'Great Vibes',cursive;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #111;
+}
+
+input[type="checkbox"] {
+
+  width: 15px;
+  height: 15px;
+  border: 2px solid #888;
+  border-radius: 6px; 
+  background: #fff;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+
+
+

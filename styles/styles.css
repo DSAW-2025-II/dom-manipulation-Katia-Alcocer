@@ -40,7 +40,6 @@ h1 {
 .container{
     width: 100%;
     height: auto;
-    background: yellow;
     display: flex; 
     align-items: center;
     flex-direction: column;
@@ -88,7 +87,6 @@ h1 {
 
 .DivList{
     margin-top: 10px;
-    background: #8a2be2;
     flex: 1;
     width: 85%;
     padding: 10px;
@@ -97,7 +95,7 @@ h1 {
 }
 
 .DivList ul li {
-  background: peru;
+  background: rgba(238, 174, 202, 0.6);
   margin: 8px 0;
   padding: 10px 15px;
   border-radius: 10px;

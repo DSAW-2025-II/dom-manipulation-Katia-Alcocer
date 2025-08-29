@@ -2,22 +2,32 @@ console.log("JavaScript working!");
 let input = document.querySelector("#taskInput");
 let addButton = document.querySelector("#addButton");
 let taskList = document.querySelector("#DynamicList");
+let taskSet = new Set();
 
 function addTask() {
-    if (input.value.trim() !== "") {
+    let newTask = input.value.trim();
+    if (newTask !== "") {
+        if (taskSet.has(newTask.toLowerCase())) {
+            alert("Esa tarea ya existe ");
+            input.value = "";
+            return;
+        }
+        taskSet.add(newTask.toLowerCase());
+
         let listItem = document.createElement("li");
         
         let checkbox = document.createElement("input");
         checkbox.type = "checkbox";
         
         let taskText = document.createElement("span");
-        taskText.textContent = input.value;
+        taskText.textContent = newTask;
     
         let deleteBtn = document.createElement("button");
         deleteBtn.textContent = "Borrar";
         deleteBtn.classList.add("delete-btn");
 
         deleteBtn.addEventListener("click", function() {
+            taskSet.delete(newTask.toLowerCase());
             listItem.remove();
         });  
 

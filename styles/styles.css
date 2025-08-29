@@ -5,10 +5,11 @@
 }
 body {
     margin: 0;
-    height: 100vh; 
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     background: linear-gradient(90deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
     
 }
@@ -28,14 +29,14 @@ h1 {
   font-family: 'Dancing Script', cursive;
   font-size: clamp(2rem, 5vw, 4rem);
   font-weight: bold;
-  color: #8a2be2; 
+  color: #333; 
   text-align: center;
 
   text-shadow: 
-    0 0 5px #8a2be2,
-    0 0 15px #8a2be2,
-    0 0 30px #8a2be2,
-    0 0 60px #8a2be2;
+    0 0 5px #333,
+    0 0 15px #333,
+    0 0 30px #e75480,
+    0 0 60px #e75480;
 }
 
 .container{
@@ -96,7 +97,7 @@ h1 {
 }
 
 .DivList ul li {
-  background: #94bbe9;
+  background: #b3d4fc;
   margin: 8px 0;
   padding: 10px 15px;
   border-radius: 20px;
@@ -159,7 +160,7 @@ h1 {
   background: crimson;
   color: white;
   border: none;
-  padding: 10px 15px;
+  padding: 5px 10px;
   border-radius: 13px;
 }
 .delete-btn:hover {
@@ -187,4 +188,26 @@ h1 {
   background:#C3C6C6;
   border-radius: 10px;
 }
+
+.DivList ul li span {
+  font-family: 'Great Vibes',cursive;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #111;
+}
+
+input[type="checkbox"] {
+
+  width: 15px;
+  height: 15px;
+  border: 2px solid #888;
+  border-radius: 6px; 
+  background: #fff;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+
+
 

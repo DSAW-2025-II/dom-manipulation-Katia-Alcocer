@@ -25,6 +25,7 @@ body {
 
 h1 {
   margin: 10px 0;
+  font-family: 'Dancing Script', cursive;
   font-size: clamp(2rem, 5vw, 4rem);
   font-weight: bold;
   color: #8a2be2; 
@@ -166,3 +167,24 @@ h1 {
   background: darkred;
   box-shadow: 0 4px 10px #5E5E5E;
 }
+
+.done span {
+  text-decoration: line-through;
+  color: #3B3D3D;
+  opacity: 0.9;
+}
+
+.DivList ul li:hover {
+  background: #7daee6;
+  transform: scale(1.01);
+  transition: 0.2s;
+}
+
+.DivList::-webkit-scrollbar {
+  width: 8px;
+}
+.DivList::-webkit-scrollbar-thumb {
+  background:#C3C6C6;
+  border-radius: 10px;
+}
+

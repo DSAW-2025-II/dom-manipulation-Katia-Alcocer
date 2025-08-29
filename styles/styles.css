@@ -17,7 +17,7 @@ body {
     height: 80vh;
     width: 80vw;
     min-height: 70vh;
-    background: white;
+    background: #FAF0F0;
     border-radius: 20px;
     box-shadow: 0 4px 40px rgba(0,0,0,0.60);
     padding: 20px;
@@ -95,10 +95,10 @@ h1 {
 }
 
 .DivList ul li {
-  background: rgba(238, 174, 202, 0.6);
+  background: #94bbe9;
   margin: 8px 0;
   padding: 10px 15px;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   display: flex;
   justify-content: space-between;
@@ -158,9 +158,11 @@ h1 {
   background: crimson;
   color: white;
   border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
+  padding: 10px 15px;
+  border-radius: 13px;
 }
 .delete-btn:hover {
+  transform: scale(1.05);
   background: darkred;
+  box-shadow: 0 4px 10px #5E5E5E;
 }

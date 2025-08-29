@@ -23,8 +23,9 @@ function addTask() {
         taskText.textContent = newTask;
     
         let deleteBtn = document.createElement("button");
-        deleteBtn.textContent = "Borrar";
+        deleteBtn.innerHTML = `<i class="fa-solid fa-trash"></i>`;
         deleteBtn.classList.add("delete-btn");
+        deleteBtn.setAttribute("title", "Borrar");
 
         deleteBtn.addEventListener("click", function() {
             taskSet.delete(newTask.toLowerCase());
